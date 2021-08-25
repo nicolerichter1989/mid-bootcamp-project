@@ -37,10 +37,13 @@ price/waterfront: the average selling price is about 3 times higher when the pro
 **3.** Draw scatter plots for `price` vs. `sqft_above`, `price` vs. `sqft_basement`, `price` vs. `living15`, `price` vs. `sqft_lot15`.
 
 **4.** Identify using tableau which state data is presented to you. Use latitude, longitude, and zip code for this. Color code the zip codes based on the prices to see which areas are more expensive than the others.
+most expensive zip codes are 98039, 98004 and 98040.
 
 **5.** Create a plot to check which are the more selling properties based on the number of bedrooms in the house. Create a plot of bedrooms vs. count of data points.
+most selling properties have 3 bedrooms
 
 **6.** We want to see the trend in price of houses based on the year built. From our previous plot, we know that most of our customers are interested in three and four bedroom houses. Create a filter on bedroom feature to select those properties and compare the trends in prices using line charts.
+decreasing tredn until 1969. after that increasing again.
 
 **7.** Create calculated field `year_built_bins` for the column `year_built` by creating buckets as follows, for houses built between 1900 and 1930 - category A, for houses built between 1930 and 1960 - category B, and for houses built between 1960 and 1990 - category C, and for houses built between 1990 and 2015 - category D. Use `IF-ELSE` statement to create the bins/buckets. Compare the prices of houses for the four categories.
 
