@@ -46,7 +46,13 @@ most selling properties have 3 bedrooms
 decreasing tredn until 1969. after that increasing again.
 
 **7.** Create calculated field `year_built_bins` for the column `year_built` by creating buckets as follows, for houses built between 1900 and 1930 - category A, for houses built between 1930 and 1960 - category B, and for houses built between 1960 and 1990 - category C, and for houses built between 1990 and 2015 - category D. Use `IF-ELSE` statement to create the bins/buckets. Compare the prices of houses for the four categories.
+the average selling price for houses is highest in category D followed by category A
 
 **8.** Now we want to deep dive into the categories we created in the last question. Let’s see how many properties are in each of the categories. Indicate the numbers as labels on each of the three categories.
+A 2.732
+B 4.901
+C 7.293
+D 6.671
 
 **9.** Deep dive in category A, category B, category C and category D using filters. Identify different characteristics/trends for each of the four categories.
+
