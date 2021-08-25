@@ -1,0 +1,2056 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='regression_data' inline='true' name='federated.05f1gf71j9brfi14soay20twic48' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='regression_data' name='textscan.1vz6uzg03plyc5143q4kw0y6zid3'>
+            <connection class='textscan' directory='C:/Users/nicol/mid-bootcamp-project/mid-bootcamp-project-1/regression/data' filename='regression_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1vz6uzg03plyc5143q4kw0y6zid3' name='regression_data.csv' table='[regression_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='integer' name='bedrooms' ordinal='2' />
+            <column datatype='real' name='bathrooms' ordinal='3' />
+            <column datatype='integer' name='sqft_living' ordinal='4' />
+            <column datatype='integer' name='sqft_lot' ordinal='5' />
+            <column datatype='real' name='floors' ordinal='6' />
+            <column datatype='integer' name='waterfront' ordinal='7' />
+            <column datatype='integer' name='view' ordinal='8' />
+            <column datatype='integer' name='condition' ordinal='9' />
+            <column datatype='integer' name='grade' ordinal='10' />
+            <column datatype='integer' name='sqft_above' ordinal='11' />
+            <column datatype='integer' name='sqft_basement' ordinal='12' />
+            <column datatype='date' date-parse-format='yyyy' name='yr_built' ordinal='13' />
+            <column datatype='date' date-parse-format='yyyy' name='yr_renovated' ordinal='14' />
+            <column datatype='string' name='zipcode' ordinal='15' />
+            <column datatype='real' name='lat' ordinal='16' />
+            <column datatype='real' name='long' ordinal='17' />
+            <column datatype='integer' name='sqft_living15' ordinal='18' />
+            <column datatype='integer' name='sqft_lot15' ordinal='19' />
+            <column datatype='integer' name='price' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1vz6uzg03plyc5143q4kw0y6zid3' name='regression_data.csv' table='[regression_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='integer' name='bedrooms' ordinal='2' />
+            <column datatype='real' name='bathrooms' ordinal='3' />
+            <column datatype='integer' name='sqft_living' ordinal='4' />
+            <column datatype='integer' name='sqft_lot' ordinal='5' />
+            <column datatype='real' name='floors' ordinal='6' />
+            <column datatype='integer' name='waterfront' ordinal='7' />
+            <column datatype='integer' name='view' ordinal='8' />
+            <column datatype='integer' name='condition' ordinal='9' />
+            <column datatype='integer' name='grade' ordinal='10' />
+            <column datatype='integer' name='sqft_above' ordinal='11' />
+            <column datatype='integer' name='sqft_basement' ordinal='12' />
+            <column datatype='date' date-parse-format='yyyy' name='yr_built' ordinal='13' />
+            <column datatype='date' date-parse-format='yyyy' name='yr_renovated' ordinal='14' />
+            <column datatype='string' name='zipcode' ordinal='15' />
+            <column datatype='real' name='lat' ordinal='16' />
+            <column datatype='real' name='long' ordinal='17' />
+            <column datatype='integer' name='sqft_living15' ordinal='18' />
+            <column datatype='integer' name='sqft_lot15' ordinal='19' />
+            <column datatype='integer' name='price' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bedrooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bedrooms]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>bedrooms</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bathrooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bathrooms]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>bathrooms</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_living</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_living]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>sqft_living</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_lot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_lot]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>sqft_lot</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>floors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[floors]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>floors</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waterfront</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[waterfront]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>waterfront</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>view</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[view]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>view</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[condition]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>condition</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_above</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_above]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>sqft_above</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_basement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_basement]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>sqft_basement</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yr_built</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[yr_built]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>yr_built</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yr_renovated</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[yr_renovated]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>yr_renovated</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[zipcode]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>zipcode</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>long</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[long]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>long</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_living15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_living15]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>sqft_living15</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_lot15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_lot15]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>sqft_lot15</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[regression_data.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='price per sqft lot' datatype='real' name='[Calculation_539024589395382272]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[price]/[sqft_living]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='regression_data.csv' datatype='table' name='[__tableau_internal_object_id__].[regression_data.csv_45A84F37814647E78EB2616662ADD0C8]' role='measure' type='quantitative' />
+      <column caption='Bathrooms' datatype='real' name='[bathrooms]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Bedrooms' datatype='integer' name='[bedrooms]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Condition' datatype='integer' name='[condition]' role='dimension' type='ordinal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Floors' datatype='real' name='[floors]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Grade' datatype='integer' name='[grade]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[lat]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Sqft Above' datatype='integer' name='[sqft_above]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Sqft Basement' datatype='integer' name='[sqft_basement]' role='dimension' type='ordinal' />
+      <column caption='Sqft Living15' datatype='integer' name='[sqft_living15]' role='measure' type='quantitative' />
+      <column caption='Sqft Living' datatype='integer' name='[sqft_living]' role='measure' type='quantitative' />
+      <column caption='Sqft Lot15' datatype='integer' name='[sqft_lot15]' role='measure' type='quantitative' />
+      <column caption='Sqft Lot' datatype='integer' name='[sqft_lot]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='View' datatype='integer' name='[view]' role='dimension' type='ordinal' />
+      <column caption='Waterfront' datatype='integer' name='[waterfront]' role='dimension' type='ordinal' />
+      <column caption='Yr Built' datatype='date' name='[yr_built]' role='dimension' type='quantitative' />
+      <column caption='Yr Renovated' datatype='date' name='[yr_renovated]' role='dimension' type='quantitative' />
+      <column aggregation='CountD' datatype='string' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='ordinal' measure-ordering='ordinal' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+        <semantic-value key='[ZipCode].[Name]' value='%null%' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='regression_data.csv' id='regression_data.csv_45A84F37814647E78EB2616662ADD0C8'>
+            <properties context=''>
+              <relation connection='textscan.1vz6uzg03plyc5143q4kw0y6zid3' name='regression_data.csv' table='[regression_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='integer' name='bedrooms' ordinal='2' />
+                  <column datatype='real' name='bathrooms' ordinal='3' />
+                  <column datatype='integer' name='sqft_living' ordinal='4' />
+                  <column datatype='integer' name='sqft_lot' ordinal='5' />
+                  <column datatype='real' name='floors' ordinal='6' />
+                  <column datatype='integer' name='waterfront' ordinal='7' />
+                  <column datatype='integer' name='view' ordinal='8' />
+                  <column datatype='integer' name='condition' ordinal='9' />
+                  <column datatype='integer' name='grade' ordinal='10' />
+                  <column datatype='integer' name='sqft_above' ordinal='11' />
+                  <column datatype='integer' name='sqft_basement' ordinal='12' />
+                  <column datatype='date' date-parse-format='yyyy' name='yr_built' ordinal='13' />
+                  <column datatype='date' date-parse-format='yyyy' name='yr_renovated' ordinal='14' />
+                  <column datatype='string' name='zipcode' ordinal='15' />
+                  <column datatype='real' name='lat' ordinal='16' />
+                  <column datatype='real' name='long' ordinal='17' />
+                  <column datatype='integer' name='sqft_living15' ordinal='18' />
+                  <column datatype='integer' name='sqft_lot15' ordinal='19' />
+                  <column datatype='integer' name='price' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Condition' datatype='integer' name='[condition]' role='dimension' type='ordinal' />
+            <column-instance column='[yr_built]' derivation='None' name='[none:yr_built:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[condition]' derivation='Sum' name='[sum:condition:qk]' pivot='key' type='quantitative' />
+            <column caption='Yr Built' datatype='date' name='[yr_built]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='13' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' />
+              <text column='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05f1gf71j9brfi14soay20twic48].[sum:condition:qk]</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[none:yr_built:qk]</cols>
+      </table>
+      <simple-id uuid='{ABD5E007-6BA6-405E-9020-9E619C78B91A}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{2574E0A6-7E58-44BB-BF9E-5056BFE6251A}' />
+    </worksheet>
+    <worksheet name='price trend for 3/4 bedrooms'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Bedrooms' datatype='integer' name='[bedrooms]' role='dimension' type='ordinal' />
+            <column-instance column='[bedrooms]' derivation='None' name='[none:bedrooms:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[yr_built]' derivation='Year-Trunc' name='[tyr:yr_built:qk]' pivot='key' type='quantitative' />
+            <column caption='Yr Built' datatype='date' name='[yr_built]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05f1gf71j9brfi14soay20twic48].[none:bedrooms:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:bedrooms:ok]' member='3' />
+              <groupfilter function='member' level='[none:bedrooms:ok]' member='4' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.05f1gf71j9brfi14soay20twic48].[none:bedrooms:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[tyr:yr_built:qk]</cols>
+      </table>
+      <simple-id uuid='{A51D7CA8-078E-4627-B52B-0815065F3785}' />
+    </worksheet>
+    <worksheet name='price/bathroom'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Bathrooms' datatype='real' name='[bathrooms]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[bathrooms]' derivation='None' name='[none:bathrooms:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' />
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='60' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk] + [federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk])</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[none:bathrooms:qk]</cols>
+      </table>
+      <simple-id uuid='{FDAB343E-24B1-4426-AB0D-645A7A6282B8}' />
+    </worksheet>
+    <worksheet name='price/bedrooms'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Bedrooms' datatype='integer' name='[bedrooms]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[bedrooms]' derivation='None' name='[none:bedrooms:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' />
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='60' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk] + [federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk])</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[none:bedrooms:qk]</cols>
+      </table>
+      <simple-id uuid='{6F48F834-4A49-4BDB-BC63-074E1EFD3F4A}' />
+    </worksheet>
+    <worksheet name='price/condition'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Condition' datatype='integer' name='[condition]' role='dimension' type='ordinal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[condition]' derivation='None' name='[none:condition:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' />
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='60' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk] + [federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk])</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[none:condition:ok]</cols>
+      </table>
+      <simple-id uuid='{F1792376-B2D5-4589-8A79-D6913C7FB708}' />
+    </worksheet>
+    <worksheet name='price/floors'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Floors' datatype='real' name='[floors]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[floors]' derivation='None' name='[none:floors:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' />
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='60' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk] + [federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk])</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[none:floors:qk]</cols>
+      </table>
+      <simple-id uuid='{B5F22023-2193-4230-A3BE-73A825B5BB8D}' />
+    </worksheet>
+    <worksheet name='price/grade'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Grade' datatype='integer' name='[grade]' role='dimension' type='ordinal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[grade]' derivation='None' name='[none:grade:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' />
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='60' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk] + [federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk])</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[none:grade:ok]</cols>
+      </table>
+      <simple-id uuid='{EB7F999D-EBBC-4298-83A0-0639176410E6}' />
+    </worksheet>
+    <worksheet name='price/living_15'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Sqft Above' datatype='integer' name='[sqft_above]' role='measure' type='quantitative' />
+            <column caption='Sqft Living15' datatype='integer' name='[sqft_living15]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_above]' derivation='Sum' name='[sum:sqft_above:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_living15]' derivation='Sum' name='[sum:sqft_living15:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_above:qk]' />
+              <size column='[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]' />
+              <lod column='[federated.05f1gf71j9brfi14soay20twic48].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.84558010101318359' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_living15:qk]</cols>
+      </table>
+      <simple-id uuid='{7FD09615-6105-4D0B-98BC-083D623B44EF}' />
+    </worksheet>
+    <worksheet name='price/sqft_above'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Sqft Above' datatype='integer' name='[sqft_above]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_above]' derivation='Sum' name='[sum:sqft_above:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_above:qk]' />
+              <size column='[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]' />
+              <lod column='[federated.05f1gf71j9brfi14soay20twic48].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.84558010101318359' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_above:qk]</cols>
+      </table>
+      <simple-id uuid='{83994F3F-C63A-440B-B181-BDE1E712EBBD}' />
+    </worksheet>
+    <worksheet name='price/sqft_basement'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Sqft Above' datatype='integer' name='[sqft_above]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Sqft Basement' datatype='integer' name='[sqft_basement]' role='dimension' type='ordinal' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_above]' derivation='Sum' name='[sum:sqft_above:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_basement]' derivation='Sum' name='[sum:sqft_basement:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_above:qk]' />
+              <size column='[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]' />
+              <lod column='[federated.05f1gf71j9brfi14soay20twic48].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.84558010101318359' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_basement:qk]</cols>
+      </table>
+      <simple-id uuid='{3D1189CE-B4B7-4609-878F-D1A59E5FDB80}' />
+    </worksheet>
+    <worksheet name='price/sqft_lot15'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Sqft Above' datatype='integer' name='[sqft_above]' role='measure' type='quantitative' />
+            <column caption='Sqft Lot15' datatype='integer' name='[sqft_lot15]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_above]' derivation='Sum' name='[sum:sqft_above:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_lot15]' derivation='Sum' name='[sum:sqft_lot15:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_above:qk]' />
+              <size column='[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]' />
+              <lod column='[federated.05f1gf71j9brfi14soay20twic48].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.84558010101318359' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_lot15:qk]</cols>
+      </table>
+      <simple-id uuid='{EB6C2178-A4C4-4C88-A7E0-0E658E2F243E}' />
+    </worksheet>
+    <worksheet name='price/view'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[view]' derivation='None' name='[none:view:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='View' datatype='integer' name='[view]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' />
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='60' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk] + [federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk])</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[none:view:ok]</cols>
+      </table>
+      <simple-id uuid='{8D21D103-47E8-4316-A620-A9CC70A36FE1}' />
+    </worksheet>
+    <worksheet name='price/waterfront'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[waterfront]' derivation='None' name='[none:waterfront:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Waterfront' datatype='integer' name='[waterfront]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' />
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='60' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk] + [federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk])</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[none:waterfront:ok]</cols>
+      </table>
+      <simple-id uuid='{4AD1F861-592A-45F1-8098-E3DBEDAE526A}' />
+    </worksheet>
+    <worksheet name='price/zipcode'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column aggregation='CountD' datatype='string' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05f1gf71j9brfi14soay20twic48].[Longitude (generated)]' field-type='quantitative' max='-13552805.813494699' min='-13664125.272713646' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.05f1gf71j9brfi14soay20twic48].[Latitude (generated)]' field-type='quantitative' max='6103012.7938493313' min='5984302.8315542815' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' palette='red_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' />
+              <lod column='[federated.05f1gf71j9brfi14soay20twic48].[none:zipcode:nk]' />
+              <geometry column='[federated.05f1gf71j9brfi14soay20twic48].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05f1gf71j9brfi14soay20twic48].[Latitude (generated)]</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{FEA7AF65-5BC0-4E60-9B6F-B88992D17801}' />
+    </worksheet>
+    <worksheet name='sales/bedrooms'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column aggregation='Sum' caption='Bedrooms' datatype='integer' name='[bedrooms]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[bedrooms]' derivation='None' name='[none:bedrooms:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.05f1gf71j9brfi14soay20twic48].[cnt:id:qk]</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[none:bedrooms:qk]</cols>
+      </table>
+      <simple-id uuid='{9FA6953A-785F-4834-9A57-FDA107A2FFDF}' />
+    </worksheet>
+    <worksheet name='zipcode ranking'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data' name='federated.05f1gf71j9brfi14soay20twic48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05f1gf71j9brfi14soay20twic48'>
+            <column caption='price per sqft lot' datatype='real' name='[Calculation_539024589395382272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[price]/[sqft_living]' />
+            </column>
+            <column-instance column='[Calculation_539024589395382272]' derivation='Avg' name='[avg:Calculation_539024589395382272:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Sqft Living' datatype='integer' name='[sqft_living]' role='measure' type='quantitative' />
+            <column aggregation='CountD' datatype='string' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.05f1gf71j9brfi14soay20twic48].[none:zipcode:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05f1gf71j9brfi14soay20twic48].[avg:Calculation_539024589395382272:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.05f1gf71j9brfi14soay20twic48].[avg:Calculation_539024589395382272:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05f1gf71j9brfi14soay20twic48].[none:zipcode:nk]</rows>
+        <cols>[federated.05f1gf71j9brfi14soay20twic48].[avg:Calculation_539024589395382272:qk]</cols>
+      </table>
+      <simple-id uuid='{785F1575-EDEA-4A34-8736-8EAFC9A5BBE7}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='13' param='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7486EB20-2380-4841-B970-0876A6440971}' />
+    </window>
+    <window class='worksheet' name='zipcode ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{51255EAA-41C4-4F15-87F6-E88C74AEA62D}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4ED1F77C-CCA4-423C-8189-5722C9AF5B04}' />
+    </window>
+    <window class='worksheet' name='price/bedrooms'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{11FBFE82-5EEC-487D-AF33-076FF5964B3D}' />
+    </window>
+    <window class='worksheet' name='price/bathroom'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{96B8A95C-FA1A-4A2B-B3BA-46A004E512EB}' />
+    </window>
+    <window class='worksheet' name='price/grade'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A8134E6F-1271-46F6-A243-963B833061AF}' />
+    </window>
+    <window class='worksheet' name='price/condition'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1E527481-6E24-4E83-99CA-2F26330556D3}' />
+    </window>
+    <window class='worksheet' name='price/floors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CB4FFC90-2E56-49FE-B2B9-4F3614B8C46D}' />
+    </window>
+    <window class='worksheet' name='price/view'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{61614CBD-7D2C-4756-9511-156714C26FB1}' />
+    </window>
+    <window class='worksheet' name='price/waterfront'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.05f1gf71j9brfi14soay20twic48].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{57CDF61A-065A-4A3E-A041-E7F1EAC6B296}' />
+    </window>
+    <window class='worksheet' name='price/sqft_above'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]' type='size' />
+            <card pane-specification-id='1' param='[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_above:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5F8DCC50-A0EB-4209-AA05-841EA1B3B88E}' />
+    </window>
+    <window class='worksheet' name='price/sqft_basement'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]' type='size' />
+            <card pane-specification-id='1' param='[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_above:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C0B23B33-1048-46B6-B883-911A73CBA073}' />
+    </window>
+    <window class='worksheet' name='price/living_15'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]' type='size' />
+            <card pane-specification-id='1' param='[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_above:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{99F2454F-841E-46A9-BF5D-9FA1DB492407}' />
+    </window>
+    <window class='worksheet' name='price/sqft_lot15'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.05f1gf71j9brfi14soay20twic48].[sum:price:qk]' type='size' />
+            <card pane-specification-id='1' param='[federated.05f1gf71j9brfi14soay20twic48].[sum:sqft_above:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ED506D0D-BB76-4619-92ED-6281C0987AC2}' />
+    </window>
+    <window class='worksheet' name='price/zipcode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.05f1gf71j9brfi14soay20twic48].[avg:price:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='16' />
+      </viewpoint>
+      <simple-id uuid='{C2212FFB-7E36-4D6C-9F8C-0840E04A77A2}' />
+    </window>
+    <window class='worksheet' name='sales/bedrooms'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{65CE1D59-628D-4391-9B6D-8C721A796CF7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='price trend for 3/4 bedrooms'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card param='[federated.05f1gf71j9brfi14soay20twic48].[none:bedrooms:ok]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{26388887-FB16-4811-B879-A42B9928DE12}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='price trend for 3/4 bedrooms' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
