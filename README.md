@@ -112,26 +112,6 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-<!-- LIBRARIES USED -->
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-import statsmodels.api as sm
-from statsmodels.formula.api import ols
-from scipy import stats
-
-import math
-from sklearn.preprocessing import OneHotEncoder, Normalizer, LabelEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, r2_score
-
-
-
-
 <!-- LICENSE -->
 ## License
 
