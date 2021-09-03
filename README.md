@@ -14,9 +14,9 @@ Data: The data set consists of information on some 22,000 properties. The datase
 
 ## Libraries
 - [pandas](https://pandas.pydata.org/)
-- numpy [title](https://www.example.com)
-- seaborn [title](https://www.example.com)
-- matplotlib [title](https://www.example.com)
-- statsmodels [title](https://www.example.com)
-- scipy [title](https://www.example.com)
-- sklearn [title](https://www.example.com)
+- [numpy](https://numpy.org/)
+- [seaborn](https://seaborn.pydata.org/)
+- [matplotlib](https://matplotlib.org/)
+- [statsmodels](https://www.statsmodels.org/stable/index.html)
+- [scipy](https://www.scipy.org/)
+- [sklearn](https://scikit-learn.org/stable/)
